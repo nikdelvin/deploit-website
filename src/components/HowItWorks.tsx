@@ -27,7 +27,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="py-20 px-4" id="how-it-works">
+    <section className="px-4 pt-16 pb-8" id="how-it-works">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, x: -20 }}
@@ -38,7 +38,7 @@ export const HowItWorks = () => {
           &lt;ExecutionFlow /&gt;
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-8">
             {steps.map((step, index) => (
               <motion.div 
@@ -65,7 +65,7 @@ export const HowItWorks = () => {
 
           <div className="relative">
             <div className="absolute -inset-4 bg-green-500/10 blur-xl rounded-full"></div>
-            <TerminalWindow title="setup.sh execution" className="relative z-10 h-[500px] flex flex-col">
+            <TerminalWindow title="setup.sh execution" className="relative z-10 h-full flex flex-col">
               <div className="space-y-6 font-mono text-sm">
                 {steps.map((step, index) => (
                   <motion.div
@@ -84,7 +84,7 @@ export const HowItWorks = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: steps.length * 1.5 + 0.5 }}
-                  className="mt-4 text-white animate-pulse"
+                  className="-mt-5 text-white animate-pulse"
                 >
                   _
                 </motion.div>

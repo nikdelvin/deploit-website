@@ -17,7 +17,7 @@ const projects = [
 
 export const SupportedProjects = () => {
   return (
-    <section className="py-20 px-4 bg-black/30">
+    <section className="px-4 pt-16 pb-8 bg-black/30">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, x: -20 }}
@@ -47,7 +47,7 @@ export const SupportedProjects = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <p className="text-gray-400 mb-4">More modules coming soon...</p>
           <a 
             href="https://github.com/nikdelvin/deploit"

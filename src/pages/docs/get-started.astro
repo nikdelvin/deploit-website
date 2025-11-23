@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { GetStarted as GetStartedContent } from '../../components/docs/GetStarted';
+import { Footer } from '../../components/Footer';
+---
+
+<Layout title="Get Started - Deploit">
+	<main>
+		<GetStartedContent client:load />
+	</main>
+	<Footer />
+</Layout>
