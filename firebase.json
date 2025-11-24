@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "vibecoded",
     "source": ".",
     "ignore": [
       "firebase.json",
