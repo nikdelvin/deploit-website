@@ -23,7 +23,7 @@ export const SupportedProjects = () => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-12 text-center text-green-400"
+          className="text-2xl md:text-4xl font-bold mb-12 text-center text-green-400"
         >
           &lt;SupportedModules /&gt;
         </motion.h2>

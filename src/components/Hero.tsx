@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, ChevronRight, Copy, Check } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Hero = () => {
   const [copied, setCopied] = useState(false);
@@ -29,9 +30,26 @@ export const Hero = () => {
           v1.0 Stable Release
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-12 tracking-tight text-transparent bg-clip-text bg-linear-to-r from-green-400 to-emerald-600 text-shadow-glow">
-          Deploit
-        </h1>
+        <div className="flex items-center justify-center gap-4 md:gap-6 mb-12">
+          <div className="relative">
+            <motion.div 
+              animate={{ 
+                scale: [1, 1.2, 1],
+                opacity: [0.3, 0.6, 0.3],
+              }}
+              transition={{ 
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="absolute -inset-4 bg-green-500/30 blur-2xl rounded-full"
+            />
+            <Logo className="w-16 h-16 md:w-20 md:h-20 relative z-10" />
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-green-400 to-emerald-600 text-shadow-glow">
+            Deploit
+          </h1>
+        </div>
         
         <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
           Self-host your favorite open-source projects in <span className="text-green-400 font-bold">seconds</span>.

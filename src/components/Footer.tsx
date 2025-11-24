@@ -1,12 +1,16 @@
 import React from 'react';
 import { Github, Twitter } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Footer = () => {
   return (
     <footer className="border-t border-gray-800 bg-black/50 px-4 py-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
-          <h3 className="text-2xl font-bold text-green-400 mb-2">Deploit</h3>
+          <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+            <Logo size={32} />
+            <h3 className="text-2xl font-bold text-green-400">Deploit</h3>
+          </div>
           <p className="text-gray-500 text-sm">
             Automated self-hosting for the modern web.
             <br />
